@@ -16,7 +16,7 @@ import {
   Input,
   Label,
 } from "reactstrap";
-import { NavLink, Redirect } from "react-router-dom";
+import { NavLink, Redirect, Link } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -66,21 +66,20 @@ class Header extends Component {
             </NavLink>
           </NavItem>
 
-          <NavItem>
+          {/* <NavItem>
             <NavLink className="nav-link" to="/profile">
               <span className="fa fa-list fa-lg"></span> Profile
             </NavLink>
-          </NavItem>
-
-          <NavItem>
-            <NavLink className="nav-link" to="/aboutus">
-              <span className="fa fa-info fa-lg"></span> About Us
-            </NavLink>
-          </NavItem>
+          </NavItem> */}
 
           <NavItem>
             <NavLink className="nav-link" to="/menu">
-              <span className="fa fa-list fa-lg"></span> My Goals
+              <span className="fa fa-bullseye fa-lg"></span> My Goals
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink className="nav-link" to="/aboutus">
+              <span className="fa fa-info fa-lg"></span> About Us
             </NavLink>
           </NavItem>
 
@@ -147,9 +146,13 @@ class Header extends Component {
                   ) : (
                     <div>
                       <div className="navbar-text mr-3">
-                        {this.props.auth.user.username}
+                        <Link to="/profile">
+                          <i class="fa fa-user-circle fa-lg"></i>
+                          {"  "}
+                          {this.props.auth.user.username}
+                        </Link>
                       </div>
-                      <Button outline onClick={this.handleLogout}>
+                      <Button color="info" onClick={this.handleLogout}>
                         <span className="fa fa-sign-out fa-lg"></span> Logout
                         {this.props.auth.isFetching ? (
                           <span className="fa fa-spinner fa-pulse fa-fw"></span>
