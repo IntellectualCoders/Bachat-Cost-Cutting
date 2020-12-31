@@ -1,4 +1,4 @@
-# Bachat- Hack Chennai 
+# Bachat, Cost Cutting Web Application
 ### Installation Guide
 1. npm install in both client and Bachat-master folder
 2. npm start on both CLient and bachat-master folder
