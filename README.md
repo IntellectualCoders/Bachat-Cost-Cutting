@@ -8,6 +8,9 @@
 ### Youtube Demo Link
 https://youtu.be/T6JdUC3JumY
 
+### Presentation
+https://docs.google.com/presentation/d/1PUTqszDpR5-JwS-60UQgrHbSiQoGLJRsxPZaCnOljeY/edit?usp=sharing
+
 ### Team Members
 1. Tanya Pandhi
 2. Teghdeep kapoor
